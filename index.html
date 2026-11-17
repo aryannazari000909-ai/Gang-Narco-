@@ -522,6 +522,57 @@ body{background:radial-gradient(ellipse at 50% -15%,#142b49 0,transparent 43%),#
 .np-achievement-icon{display:grid;place-items:center;flex:0 0 38px;height:38px;border-radius:11px;background:#173c64;color:#a9d3ff;font-size:17px}
 .np-achievement b,.np-achievement small{display:block}.np-achievement b{font-size:11px;color:#edf5ff}.np-achievement small{font-size:8px;color:#83a6cb;margin-top:5px;letter-spacing:.5px}
 
+
+/* ===== V22: NARCO MEMBER EXPERIENCE UPGRADE ===== */
+.lb-v22-podium{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:18px 0 22px}
+.lb-v22-podium-item{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;min-height:142px;padding:17px 12px;border:1px solid rgba(105,164,222,.2);border-radius:18px;background:linear-gradient(145deg,rgba(13,34,57,.92),rgba(4,13,25,.98));text-align:center}
+.lb-v22-podium-item.featured{border-color:rgba(111,190,255,.48);background:radial-gradient(circle at 50% 0,rgba(48,135,205,.2),transparent 70%),linear-gradient(145deg,rgba(17,48,78,.98),rgba(4,13,25,.98));box-shadow:0 12px 35px rgba(22,103,175,.13)}
+.lb-v22-podium-item small{font-size:8px;letter-spacing:1.2px;color:#86b9e8}.lb-v22-podium-item span{font-size:24px;color:#a8d8ff;text-shadow:0 0 18px rgba(75,165,240,.4)}.lb-v22-podium-item b{font-size:14px;color:#f0f7ff}.lb-v22-podium-item em{font-size:8px;font-style:normal;letter-spacing:1.4px;color:#819bb8}
+@media(max-width:650px){.lb-v22-podium{grid-template-columns:1fr;gap:8px}.lb-v22-podium-item{min-height:105px}}
+
+.narco-login-panel{width:min(960px,94vw)!important;max-width:960px!important;overflow:hidden!important;border:1px solid rgba(99,178,255,.32)!important;border-radius:28px!important;background:linear-gradient(145deg,#08172a,#030914)!important;box-shadow:0 35px 120px rgba(0,0,0,.78),0 0 65px rgba(31,126,218,.16)!important;grid-template-columns:1fr 1fr!important}
+.narco-login-panel .login-visual{min-height:560px!important;background:radial-gradient(circle at 50% 42%,rgba(42,139,225,.42),transparent 34%),linear-gradient(150deg,#102c4d,#061222 68%,#030914)!important;border:0!important}
+.narco-login-panel .login-crest{border-radius:22px!important;transform:rotate(45deg)!important;box-shadow:0 0 0 10px rgba(92,170,240,.07),0 0 65px rgba(65,164,255,.55),inset 0 0 25px rgba(150,210,255,.18)!important}
+.narco-login-panel .login-form-side{background:linear-gradient(160deg,rgba(10,26,46,.98),rgba(4,12,24,.99))!important;padding:48px 38px!important}
+.narco-login-panel .login-form-side input{border:1px solid rgba(105,172,235,.25)!important;background:rgba(2,10,21,.72)!important;border-radius:13px!important;transition:border-color .2s,box-shadow .2s!important}
+.narco-login-panel .login-form-side input:focus{border-color:#5bb7ff!important;box-shadow:0 0 0 3px rgba(55,151,235,.13)!important}
+.narco-login-panel .submit-button{min-height:50px!important;border-radius:13px!important;box-shadow:0 10px 28px rgba(24,112,205,.24)!important}
+.login-visual-kicker{letter-spacing:2.4px!important;color:#9bcfff!important}
+.login-visual-foot{letter-spacing:1.5px!important;color:#8eb5dc!important}
+/* Hall of Fame: premium editorial layout */
+.narco-leaderboard-v16{position:relative!important;isolation:isolate!important;overflow:hidden!important}
+.narco-leaderboard-v16:before{content:"";position:absolute;z-index:-1;inset:8% -12% auto;height:430px;background:radial-gradient(ellipse,rgba(27,105,184,.16),transparent 68%);pointer-events:none}
+.narco-leaderboard-v16 .section-top{align-items:end!important;margin-bottom:26px!important}
+.narco-leaderboard-v16 .section-top h2{font-size:clamp(27px,4vw,42px)!important;letter-spacing:-1px!important}
+.lb-v16-intro{padding:22px 24px!important;border:1px solid rgba(102,174,241,.28)!important;border-radius:22px!important;background:linear-gradient(110deg,rgba(17,48,79,.96),rgba(5,15,29,.98) 62%,rgba(9,29,51,.96))!important;box-shadow:0 18px 48px rgba(0,0,0,.22),inset 0 1px rgba(255,255,255,.06)!important}
+.lb-v16-seal{box-shadow:0 0 30px rgba(73,163,244,.23)!important;border-color:rgba(139,204,255,.55)!important}
+.lb-v16-grid{gap:18px!important;align-items:stretch!important}
+.lb-v16-card{position:relative!important;overflow:hidden!important;padding:23px!important;border:1px solid rgba(105,164,222,.22)!important;border-radius:22px!important;background:linear-gradient(155deg,rgba(13,31,52,.98),rgba(4,12,24,.99))!important;box-shadow:0 16px 42px rgba(0,0,0,.24)!important;transition:transform .25s,border-color .25s,box-shadow .25s!important}
+.lb-v16-card:after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:linear-gradient(90deg,transparent,#4ba8f5,transparent);opacity:.8}
+.lb-v16-card:hover{transform:translateY(-5px)!important;border-color:rgba(95,178,255,.5)!important;box-shadow:0 22px 48px rgba(0,0,0,.34),0 0 30px rgba(38,128,210,.1)!important}
+.lb-v16-card h3{font-size:19px!important;color:#edf6ff!important}
+.lb-v16-card>p{color:#8ea8c4!important;line-height:1.9!important}
+.lb-v16-ranking{gap:8px!important;margin:20px 0!important}
+.lb-v16-ranking li{min-height:57px!important;padding:10px 12px!important;border:1px solid rgba(124,169,214,.1)!important;border-radius:13px!important;background:rgba(255,255,255,.025)!important;display:grid!important;grid-template-columns:34px 1fr auto!important;align-items:center!important;column-gap:10px!important}
+.lb-v16-ranking li b{color:#e7f2ff!important;font-size:12px!important}
+.lb-v16-ranking li small{grid-column:2!important;color:#7896b8!important;font-size:8px!important;letter-spacing:1px!important}
+.lb-v16-ranking .lb-place{grid-row:1/3!important;width:30px!important;height:30px!important;display:grid!important;place-items:center!important;border-radius:9px!important;background:rgba(55,131,202,.15)!important;color:#a7d7ff!important}
+.lb-v16-ranking li.lb-v16-first{border-color:rgba(229,188,105,.28)!important;background:linear-gradient(100deg,rgba(166,123,51,.12),rgba(255,255,255,.025))!important}
+.lb-v16-ranking .lb-v16-medal{grid-column:3!important;grid-row:1/3!important;color:#e8c477!important;font-size:18px!important}
+.lb-v16-foot{margin-top:auto!important;padding-top:16px!important;border-top:1px solid rgba(125,170,215,.13)!important;color:#7895b4!important}
+.lb-v16-bottom{margin-top:20px!important;padding:18px 20px!important;border:1px solid rgba(105,164,222,.17)!important;border-radius:17px!important;background:rgba(7,19,34,.72)!important}
+/* Profile achievements and member appreciation */
+.np-achievement-list{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
+.np-achievement{min-height:68px!important;padding:13px!important;border:1px solid rgba(100,169,231,.2)!important;border-radius:14px!important;background:linear-gradient(145deg,rgba(21,49,78,.75),rgba(5,15,28,.92))!important}
+.np-achievement-icon{width:34px!important;height:34px!important;display:grid!important;place-items:center!important;border-radius:10px!important;background:rgba(66,151,222,.16)!important;color:#9bd4ff!important}
+.np-popularity-card{margin-top:13px!important}
+.np-reaction-grid{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:9px!important;margin-top:14px!important}
+.np-reaction-grid button{display:flex!important;flex-direction:column!important;align-items:center!important;gap:5px!important;padding:13px 6px!important;min-width:0!important;border:1px solid rgba(111,170,224,.18)!important;border-radius:14px!important;background:rgba(20,46,73,.42)!important;color:#d9eaff!important;cursor:pointer!important;transition:.2s!important}
+.np-reaction-grid button span{font-size:21px!important}.np-reaction-grid button b{font-size:13px!important;color:#fff!important}.np-reaction-grid button small{font-size:9px!important;color:#8eaac8!important}
+.np-reaction-grid button.selected{border-color:rgba(88,180,255,.72)!important;background:linear-gradient(145deg,rgba(34,112,180,.38),rgba(16,43,70,.7))!important;box-shadow:0 0 22px rgba(49,145,220,.16)!important;transform:translateY(-2px)!important}
+.np-local-note{display:block!important;margin-top:12px!important;color:#708ba9!important;font-size:9px!important;line-height:1.8!important}
+@media(max-width:680px){.narco-login-panel{grid-template-columns:1fr!important;width:min(94vw,520px)!important;max-height:90dvh!important;overflow-y:auto!important}.narco-login-panel .login-visual{min-height:245px!important;padding:24px!important}.narco-login-panel .login-crest{width:62px!important;height:62px!important;font-size:38px!important;margin-bottom:27px!important}.narco-login-panel .login-visual h3{font-size:22px!important;margin:5px!important}.narco-login-panel .login-form-side{padding:28px 22px!important}.lb-v16-grid{grid-template-columns:1fr!important}.np-achievement-list{grid-template-columns:1fr!important}.np-reaction-grid{gap:6px!important}.np-reaction-grid button{padding:10px 3px!important}}
+
 </style>
 <style>
 /* NARCO V6 — cinematic 3D square crest for the homepage */
@@ -668,8 +719,8 @@ section[id]{scroll-margin-top:112px}
 @media(max-width:700px){html{scroll-padding-top:92px}section[id]{scroll-margin-top:92px}.lb-v16-intro{padding:12px}.lb-v16-live{font-size:7px}.lb-v16-grid{gap:12px}.lb-v16-card:hover{transform:none}.lb-v16-bottom{align-items:flex-start}.lb-v16-bottom>span:last-child{display:none}.np-lore-title{gap:7px}.np-lore-title b{font-size:16px}.np-lore-title span{font-size:9px}}
 </style>
 
-<style>
-/* V18: properly scoped profile reactions and fixed voice dock */
+<style id="narco-v17-custom-styles">
+/* ===== V17 NARCO VOICE + SIGNATURE EXPERIENCE ===== */
 .np-personal-signature{display:grid!important;gap:8px!important;padding:20px 16px!important;margin:14px 0!important;border:1px solid rgba(110,177,239,.22);border-radius:15px;background:linear-gradient(110deg,rgba(11,37,63,.92),rgba(5,14,26,.96));}
 .np-personal-signature b{font-family:Georgia,serif!important;font-size:clamp(15px,3vw,22px)!important;letter-spacing:1.6px!important;line-height:1.5;color:#d6eaff!important;text-shadow:0 0 22px #4da8ff55}
 .np-personal-signature span{font-size:8px!important;letter-spacing:2px;color:#7199bd}
@@ -688,33 +739,37 @@ section[id]{scroll-margin-top:112px}
 .nvd-rooms{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.nvd-room{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:10px;border:1px solid #203d59;border-radius:12px;background:#091827}.nvd-room strong{display:block;font-size:10px;color:#d9ebff}.nvd-room small{display:block;margin-top:4px;font-size:8px;color:#7292b1}.nvd-room button{border:1px solid #35648b;border-radius:8px;background:#102e49;color:#c5e6ff;padding:7px 9px;font:inherit;font-size:9px}.nvd-room button:disabled{opacity:.45;cursor:not-allowed}
 .nvd-controls{display:flex;gap:8px;margin-top:10px}.nvd-controls button{flex:1;border:1px solid #294763;border-radius:10px;background:#0b1d30;color:#a8c6e4;padding:9px;font:inherit;font-size:9px}.nvd-foot{font-size:8px;color:#6f8ba7;line-height:1.8;margin-top:9px}
 @media(max-width:520px){#narcoVoiceDock{left:7px;right:7px;bottom:7px}.nvd-rooms{grid-template-columns:1fr 1fr}.nvd-room{padding:8px}.nvd-room strong{font-size:9px}.nvd-room button{padding:7px}}
-
-/* V18 visual repair */
-#narcoVoiceDock{position:fixed!important;z-index:99999!important;bottom:calc(12px + env(safe-area-inset-bottom))!important;left:12px!important;right:12px!important;width:min(620px,calc(100% - 24px))!important;max-width:620px!important;margin:0 auto!important;box-sizing:border-box!important;overflow:hidden!important}
-#narcoVoiceDock *{box-sizing:border-box}
-#narcoVoiceDock .nvd-top{min-height:62px}
-#narcoVoiceDock .nvd-body{max-height:min(62vh,520px);overflow-y:auto;overscroll-behavior:contain}
-#narcoVoiceDock .nvd-status{line-height:1.6}
-#narcoVoiceDock .nvd-room button:disabled{opacity:.55;cursor:not-allowed}
-.np-reaction-panel{margin:14px 0;padding:16px;border:1px solid rgba(91,157,219,.24);border-radius:16px;background:linear-gradient(145deg,#0c1c2e,#07111e)}
-.np-reaction-title{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:12px}
-.np-reaction-title small{display:block;color:#79a6ce;font-size:9px;letter-spacing:1.5px}
-.np-reaction-title strong{font-size:13px;color:#e3f1ff}
-.np-reaction-actions{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
-.np-reaction-btn{display:flex;align-items:center;justify-content:center;gap:7px;min-height:46px;padding:8px 5px;border:1px solid #254766;border-radius:12px;background:#0a2035;color:#c7def4;font:inherit;cursor:pointer;transition:transform .18s,border-color .18s,background .18s}
-.np-reaction-btn:active{transform:scale(.96)}
-.np-reaction-btn b{font-size:20px;line-height:1}
-.np-reaction-btn span{font-size:11px;font-weight:800;font-variant-numeric:tabular-nums}
-.np-reaction-btn[aria-pressed="true"]{border-color:#62aef0;background:#12395a;box-shadow:0 0 18px #2f8bd52b}
-.np-reaction-btn[data-reaction="heart"][aria-pressed="true"] b{color:#ff6f91}
-.np-reaction-btn[data-reaction="flower"][aria-pressed="true"] b{color:#ffb5db}
-.np-reaction-btn[data-reaction="like"][aria-pressed="true"] b{color:#7dc6ff}
-.np-reaction-btn[data-reaction="dislike"][aria-pressed="true"] b{color:#b1bdcc}
-.np-reaction-note{margin-top:9px;color:#718da9;font-size:9px;line-height:1.7}
-@media(max-width:420px){.np-reaction-actions{gap:5px}.np-reaction-btn{gap:4px;min-height:42px}.np-reaction-btn b{font-size:18px}.np-reaction-btn span{font-size:10px}}
-
 </style>
 
+<style id="narco-voice-premium-refresh">
+/* NARCO VOICE · isolated visual layer — intentionally scoped to the voice dock */
+#narcoVoiceDock{position:fixed!important;left:auto!important;right:clamp(12px,2vw,24px)!important;bottom:clamp(12px,2vw,24px)!important;width:min(430px,calc(100vw - 24px))!important;max-width:430px!important;margin:0!important;z-index:9998!important;overflow:hidden!important;border:1px solid rgba(91,174,255,.48)!important;border-radius:22px!important;background:linear-gradient(145deg,rgba(7,20,36,.98),rgba(3,9,18,.98))!important;box-shadow:0 22px 70px rgba(0,0,0,.62),0 0 0 1px rgba(60,145,230,.08),0 0 38px rgba(25,123,220,.18)!important;backdrop-filter:blur(22px)!important;color:#eaf5ff!important;isolation:isolate}
+#narcoVoiceDock:before{content:"";position:absolute;inset:0 0 auto;height:2px;background:linear-gradient(90deg,transparent,#4eb5ff,#d7efff,#347ed2,transparent);opacity:.95;pointer-events:none}
+#narcoVoiceDock .nvd-top{position:relative;min-height:74px;padding:14px 15px!important;gap:12px!important}
+#narcoVoiceDock .nvd-brand{gap:12px!important;min-width:0}
+#narcoVoiceDock .nvd-mark{width:43px!important;height:43px!important;flex:0 0 43px;border-radius:14px!important;background:radial-gradient(circle at 30% 20%,#347eb8,#102e4b 58%,#071321)!important;border:1px solid rgba(127,194,255,.65)!important;color:#eff9ff!important;font-size:19px!important;box-shadow:0 0 24px rgba(49,151,235,.22),inset 0 1px 10px rgba(255,255,255,.12)}
+#narcoVoiceDock .nvd-title{font-size:11px!important;letter-spacing:1.65px!important;color:#eff8ff!important;font-weight:900!important}
+#narcoVoiceDock .nvd-sub{font-size:8px!important;letter-spacing:1.3px!important;color:#79a9d1!important}
+#narcoVoiceDock #nvdToggle{white-space:nowrap;border:1px solid rgba(100,179,245,.55)!important;border-radius:11px!important;padding:10px 12px!important;background:linear-gradient(135deg,#153d60,#0a2036)!important;color:#dff2ff!important;font-size:9px!important;font-weight:900!important;letter-spacing:.7px;box-shadow:inset 0 1px rgba(255,255,255,.08),0 5px 18px rgba(0,0,0,.25);cursor:pointer}
+#narcoVoiceDock #nvdToggle:active{transform:scale(.97)}
+#narcoVoiceDock .nvd-body{padding:0 14px 15px!important}
+#narcoVoiceDock .nvd-status{min-height:38px;padding:10px 11px!important;margin:0 0 12px!important;border:1px solid rgba(76,130,180,.18);border-radius:12px!important;background:linear-gradient(90deg,rgba(12,35,57,.9),rgba(7,21,36,.9))!important;color:#a9c6df!important;font-size:8px!important;line-height:1.7;overflow-wrap:anywhere}
+#narcoVoiceDock .nvd-dot{flex:0 0 7px;background:#e2ad55!important;box-shadow:0 0 12px #e2ad5577!important}
+#narcoVoiceDock .nvd-rooms{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important}
+#narcoVoiceDock .nvd-room{min-height:67px;padding:11px!important;border:1px solid rgba(69,119,164,.3)!important;border-radius:14px!important;background:linear-gradient(145deg,rgba(13,34,54,.98),rgba(6,17,29,.98))!important;box-shadow:inset 0 1px rgba(255,255,255,.035);transition:border-color .2s,transform .2s}
+#narcoVoiceDock .nvd-room:focus-within{border-color:rgba(100,184,255,.7)!important}
+#narcoVoiceDock .nvd-room strong{font-size:9px!important;letter-spacing:.55px;color:#e5f3ff!important}
+#narcoVoiceDock .nvd-room small{font-size:8px!important;color:#7e9fbd!important;line-height:1.5}
+#narcoVoiceDock .nvd-room button{min-width:48px;border:1px solid rgba(94,166,225,.48)!important;border-radius:9px!important;background:linear-gradient(135deg,#174b75,#0c2943)!important;color:#d9efff!important;padding:8px 9px!important;font-size:8px!important;font-weight:900!important;letter-spacing:.7px}
+#narcoVoiceDock .nvd-room button:disabled{opacity:.38!important;filter:saturate(.5)}
+#narcoVoiceDock .nvd-controls{gap:9px!important;margin-top:11px!important}
+#narcoVoiceDock .nvd-controls button{border-radius:10px!important;padding:10px!important;border:1px solid rgba(78,133,180,.3)!important;background:#0b2034!important;color:#c3dff5!important;font-size:8px!important;font-weight:800!important;letter-spacing:.5px}
+#narcoVoiceDock .nvd-foot{margin-top:11px!important;padding:9px 10px;border-radius:10px;background:rgba(4,13,23,.72);color:#6f8ba7!important;font-size:8px!important;line-height:1.8!important}
+@media(max-width:520px){#narcoVoiceDock{right:9px!important;bottom:9px!important;width:calc(100vw - 18px)!important;max-width:none!important;border-radius:18px!important}#narcoVoiceDock .nvd-top{min-height:66px;padding:11px 12px!important}#narcoVoiceDock .nvd-mark{width:38px!important;height:38px!important;flex-basis:38px;font-size:17px!important}#narcoVoiceDock .nvd-title{font-size:9px!important;letter-spacing:1.2px!important}#narcoVoiceDock .nvd-sub{font-size:7px!important}#narcoVoiceDock #nvdToggle{padding:9px 10px!important;font-size:8px!important}#narcoVoiceDock .nvd-room{min-height:62px;padding:9px!important}#narcoVoiceDock .nvd-room strong{font-size:8px!important}#narcoVoiceDock .nvd-room small{font-size:7px!important}}
+@media(prefers-reduced-motion:reduce){#narcoVoiceDock *,#narcoVoiceDock *:before{transition:none!important;animation:none!important}}
+</style>
+
+<meta name="narco-build" content="v22-member-experience"/>
 </head>
 <body>
 <div class="noise"></div>
@@ -823,10 +878,15 @@ section[id]{scroll-margin-top:112px}
 
 <section class="leaderboard section narco-leaderboard-v16" id="leaderboard">
 <div class="section-top">
-<div><span class="eyebrow">03 / THE ELITE</span><h2>برترین‌های نارکو</h2><p>تالار افتخار؛ رتبه‌ها در سه میدان متفاوت از رقابت و وفاداری.</p></div>
+<div><span class="eyebrow">03 / THE ELITE</span><h2>برترین‌های نارکو</h2><p>تالار افتخار نارکو؛ سه بخش رسمی برای عملکرد، فعالیت و امتیاز اعضا. رتبه‌ها مطابق فهرست اعلام‌شده مدیریت هستند.</p></div>
 <span class="section-note">NARCO HALL OF FAME · 2026</span>
 </div>
 <div class="lb-v16-intro"><span class="lb-v16-seal">N</span><div><b>THE ELITE REGISTER</b><small>THREE DISCIPLINES · ONE CREW</small></div><span class="lb-v16-live"><i></i> OFFICIAL RANKINGS</span></div>
+<div class="lb-v22-podium" aria-label="قهرمانان سه بخش">
+ <div class="lb-v22-podium-item"><small>ROB DIVISION · #01</small><span>♜</span><b>Amirali Ataei</b><em>TOP ROBBER</em></div>
+ <div class="lb-v22-podium-item featured"><small>ACTIVITY DIVISION · #01</small><span>✦</span><b>Aryan Nazari</b><em>MOST ACTIVE</em></div>
+ <div class="lb-v22-podium-item"><small>SCORE DIVISION · #01</small><span>♛</span><b>Amirali Ataei</b><em>HIGHEST SCORE</em></div>
+</div>
 <div class="leaderboard-grid lb-v16-grid">
 <article class="leaderboard-card lb-v16-card">
 <div class="lb-v16-cardtop"><div class="lb-icon">♜</div><span class="lb-v16-index">01 / 03</span></div><span class="eyebrow">ROB PERFORMANCE</span><h3>برترین‌ها در راب‌ها</h3><p>اعضای برتر در عملیات و راب‌ها.</p>
@@ -1089,13 +1149,29 @@ function openProfile(id){
    <article class="np-info-card np-name-lore"><div class="np-card-heading"><span>02</span><div><small>NAME LORE / SYMBOLIC READING</small><h3>THE MEANING BEHIND THE NAME</h3></div></div><div class="np-lore-title"><b>${(nameLore[m.id]||{}).title||m.name.split(" ")[0].toUpperCase()}</b><span>${(nameLore[m.id]||{}).epithet||"THE UNWRITTEN LEGACY"}</span></div><p>${(nameLore[m.id]||{}).text||"Every name carries a story. This symbolic portrait is a poetic interpretation, not a factual judgment of character."}</p><small class="np-lore-note">A POETIC INTERPRETATION · NOT A FACTUAL PERSONALITY ASSESSMENT</small></article>
    <article class="np-info-card"><div class="np-card-heading"><span>03</span><div><small>SKILLS & SPECIALTIES</small><h3>مهارت‌ها و تخصص‌ها</h3></div></div><div class="skill-list">${skills}</div></article>
    <div class="np-signature np-personal-signature"><b>${personalSignatures[m.id]||m.name.toUpperCase()}</b><span>PERSONAL SEAL · ${m.name.toUpperCase()}</span></div>
-   <article class="np-reaction-panel" data-reaction-profile="${m.id}"><div class="np-reaction-title"><div><small>PROFILE REACTIONS</small><strong>واکنش به پروفایل</strong></div><span style="font-size:9px;color:#7398b9">SHOW SOME LOVE</span></div><div class="np-reaction-actions"><button class="np-reaction-btn" type="button" data-reaction="heart" aria-pressed="false" aria-label="قلب"><b>♥</b><span data-count>0</span></button><button class="np-reaction-btn" type="button" data-reaction="flower" aria-pressed="false" aria-label="گل"><b>🌹</b><span data-count>0</span></button><button class="np-reaction-btn" type="button" data-reaction="like" aria-pressed="false" aria-label="لایک"><b>👍</b><span data-count>0</span></button><button class="np-reaction-btn" type="button" data-reaction="dislike" aria-pressed="false" aria-label="دیس‌لایک"><b>👎</b><span data-count>0</span></button></div><div class="np-reaction-note">برای هر پروفایل یک واکنش انتخاب کن؛ با انتخاب واکنش دیگر، واکنش قبلی جایگزین می‌شود.</div></article>
+   <article class="np-gift-wall"><div class="np-card-heading"><span>04</span><div><small>GIFT COLLECTION</small><h3>کلکسیون گیفت‌ها</h3></div></div><div class="np-gift-items"><div class="np-gift-item"><b>✿</b><span>BLUE ROSE</span></div><div class="np-gift-item"><b>♛</b><span>SILVER CROWN</span></div><div class="np-gift-item"><b>◇</b><span>DIAMOND SKULL</span></div></div><button class="np-gift-locked" type="button" disabled>ارسال گیفت · پس از اتصال دیتابیس فعال می‌شود</button></article>
   </section>
-  <section class="profile-tab-panel np-panel" data-profile-panel="record"><article class="np-info-card"><div class="np-card-heading"><span>02</span><div><small>HONORS & ACHIEVEMENTS</small><h3>دستاوردها و رتبه‌ها</h3></div></div>${(profileAchievements[m.id]||[]).length?`<div class="np-achievement-list">${profileAchievements[m.id].map(a=>`<div class="np-achievement"><span class="np-achievement-icon">✦</span><div><b>${a.title}</b><small>${a.label}</small></div></div>`).join("")}</div>`:'<p>هنوز دستاوردی برای این عضو ثبت نشده است.</p>'}</article></section>
+  <section class="profile-tab-panel np-panel" data-profile-panel="record"><article class="np-info-card"><div class="np-card-heading"><span>02</span><div><small>HONORS & ACHIEVEMENTS</small><h3>دستاوردها و رتبه‌ها</h3></div></div>${(profileAchievements[m.id]||[]).length?`<div class="np-achievement-list">${profileAchievements[m.id].map(a=>`<div class="np-achievement"><span class="np-achievement-icon">✦</span><div><b>${a.title}</b><small>${a.label}</small></div></div>`).join("")}</div>`:'<p>هنوز دستاوردی برای این عضو ثبت نشده است.</p>'}</article>
+   <article class="np-info-card np-popularity-card"><div class="np-card-heading"><span>03</span><div><small>CREW APPRECIATION</small><h3>محبوبیت بین اعضا</h3></div></div>
+    <p class="np-popularity-note">واکنش خودت را برای این عضو ثبت کن.</p>
+    <div class="np-reaction-grid" data-reaction-member="${m.id}">
+     <button type="button" data-reaction="heart"><span>♥</span><b data-count="heart">0</b><small>قلب</small></button>
+     <button type="button" data-reaction="flower"><span>✿</span><b data-count="flower">0</b><small>گل</small></button>
+     <button type="button" data-reaction="like"><span>👍</span><b data-count="like">0</b><small>لایک</small></button>
+     <button type="button" data-reaction="dislike"><span>👎</span><b data-count="dislike">0</b><small>دیس‌لایک</small></button>
+    </div><small class="np-local-note">LOCAL PREVIEW · این واکنش‌ها فعلاً فقط در همین مرورگر ذخیره می‌شوند.</small>
+   </article></section>
   <section class="profile-tab-panel np-panel" data-profile-panel="activity"><div class="np-empty"><div class="np-empty-icon">⌁</div><small>MEMBER ACTIVITY LOG</small><h3>گزارش فعالیت</h3><p>گزارش حضور، مشارکت در راب‌ها و امتیاز عضو هنوز ثبت نشده است؛ هیچ آماری به‌صورت فرضی نمایش داده نمی‌شود.</p><span>ACTIVITY NOT CONNECTED</span></div></section>
   <div class="np-actions"><button type="button" class="np-copy" data-copy-member="${m.id}">کپی شناسه عضو <span>⧉</span></button><span>GANG NARCO / EST. LOYALTY</span></div>
  </div>`;
  profileModal.classList.add("visible");profileModal.setAttribute("aria-hidden","false");
+ const reactionBox=document.querySelector('.np-reaction-grid[data-reaction-member="'+m.id+'"]');
+ if(reactionBox){
+  const storageKey='narco_reactions_v1';let all={};try{all=JSON.parse(localStorage.getItem(storageKey)||'{}')||{}}catch(e){all={}}
+  const state=all[m.id]||{counts:{heart:0,flower:0,like:0,dislike:0},mine:null};
+  const paint=()=>{['heart','flower','like','dislike'].forEach(k=>{const b=reactionBox.querySelector('[data-reaction="'+k+'"]');b.classList.toggle('selected',state.mine===k);b.querySelector('[data-count="'+k+'"]').textContent=state.counts[k]||0})};
+  paint();reactionBox.querySelectorAll('[data-reaction]').forEach(b=>b.addEventListener('click',()=>{const k=b.dataset.reaction;if(state.mine===k){state.counts[k]=Math.max(0,(state.counts[k]||0)-1);state.mine=null}else{if(state.mine)state.counts[state.mine]=Math.max(0,(state.counts[state.mine]||0)-1);state.mine=k;state.counts[k]=(state.counts[k]||0)+1}all[m.id]=state;try{localStorage.setItem(storageKey,JSON.stringify(all))}catch(e){}paint()}));
+ }
  document.querySelectorAll('[data-profile-tab]').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('[data-profile-tab]').forEach(x=>x.classList.toggle('active',x===btn));document.querySelectorAll('[data-profile-panel]').forEach(x=>x.classList.toggle('active',x.dataset.profilePanel===btn.dataset.profileTab))}));
  document.querySelector('[data-copy-member]')?.addEventListener('click',async e=>{const value='#'+e.currentTarget.dataset.copyMember;try{await navigator.clipboard.writeText(value);e.currentTarget.innerHTML='شناسه کپی شد <span>✓</span>'}catch{e.currentTarget.innerHTML=value}});
 }
@@ -1118,15 +1194,20 @@ document.querySelectorAll(".nav a").forEach(a=>a.addEventListener("click",()=>do
 <div aria-label="پخش‌کننده موسیقی نارکو" id="narcoMusic">
 <div class="nm-shell">
 <div class="nm-head"><div class="nm-disc"><span>N</span></div><div><div class="nm-title">NARCO SOUND</div><div class="nm-sub">ONLINE STREAM · MUSIC DECK</div></div><button aria-label="جمع کردن پلیر" class="nm-collapse" id="nmCollapse">⌄</button></div>
-<div class="nm-track" id="nmTrackName">SoundHelix · Track 01</div>
+<div class="nm-track" id="nmTrackName">NARCO Instrumental · 01</div>
 <div class="nm-progress"><span id="nmCurrent">0:00</span><input class="nm-seek" id="nmSeek" max="100" min="0" type="range" value="0"/><span id="nmDuration">0:00</span></div>
 <div class="nm-controls"><button aria-label="قبلی" class="nm-btn" id="nmPrev">⏮</button><button aria-label="پخش" class="nm-btn main" id="nmPlay">▶</button><button aria-label="بعدی" class="nm-btn" id="nmNext">⏭</button><label class="nm-volume" title="تنظیم صدا">♫ <input id="nmVolume" max="1" min="0" step="0.01" type="range" value="0.28"/></label></div>
 <div class="nm-list" id="nmPlaylist">
-<button class="active" data-track="0"><span class="nm-num">01</span><span>SoundHelix · Track 01</span><small>ONLINE</small></button>
-<button data-track="1"><span class="nm-num">02</span><span>SoundHelix · Track 02</span><small>ONLINE</small></button>
-<button data-track="2"><span class="nm-num">03</span><span>SoundHelix · Track 03</span><small>ONLINE</small></button>
+<button class="active" data-track="0"><span class="nm-num">01</span><span>NARCO Instrumental · 01</span><small>ONLINE</small></button>
+<button data-track="1"><span class="nm-num">02</span><span>NARCO Instrumental · 02</span><small>ONLINE</small></button>
+<button data-track="2"><span class="nm-num">03</span><span>NARCO Instrumental · 03</span><small>ONLINE</small></button>
+<button data-track="3"><span class="nm-num">04</span><span>NARCO Instrumental · 04</span><small>ONLINE</small></button>
+<button data-track="4"><span class="nm-num">05</span><span>NARCO Instrumental · 05</span><small>ONLINE</small></button>
+<button data-track="5"><span class="nm-num">06</span><span>NARCO Instrumental · 06</span><small>ONLINE</small></button>
+<button data-track="6"><span class="nm-num">07</span><span>NARCO Instrumental · 07</span><small>ONLINE</small></button>
+<button data-track="7"><span class="nm-num">08</span><span>NARCO Instrumental · 08</span><small>ONLINE</small></button>
 </div>
-<div class="nm-note">پخش آنلاین از SoundHelix؛ برای شروع یک‌بار Play را بزنید. اتصال اینترنت لازم است.</div>
+<div class="nm-note">۸ ترک نمونه‌ی بی‌کلام آنلاین؛ برای شروع Play را بزنید. اتصال اینترنت لازم است. در صورت محدودیت میزبان، از انتخاب فایل شخصی استفاده کنید.</div>
 </div>
 <audio id="nmAudio" preload="none"></audio>
 </div>
@@ -1135,9 +1216,14 @@ document.querySelectorAll(".nav a").forEach(a=>a.addEventListener("click",()=>do
  const root=document.getElementById('narcoMusic'); if(!root)return;
  const audio=document.getElementById('nmAudio'), play=document.getElementById('nmPlay'), seek=document.getElementById('nmSeek'), vol=document.getElementById('nmVolume');
  const tracks=[
-  {name:'SoundHelix · Track 01',src:'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3'},
-  {name:'SoundHelix · Track 02',src:'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3'},
-  {name:'SoundHelix · Track 03',src:'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3'}
+  {name:'NARCO Instrumental · 01',src:'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3'},
+  {name:'NARCO Instrumental · 02',src:'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3'},
+  {name:'NARCO Instrumental · 03',src:'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3'},
+  {name:'NARCO Instrumental · 04',src:'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3'},
+  {name:'NARCO Instrumental · 05',src:'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3'},
+  {name:'NARCO Instrumental · 06',src:'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3'},
+  {name:'NARCO Instrumental · 07',src:'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3'},
+  {name:'NARCO Instrumental · 08',src:'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3'}
  ]; let index=0;
  const fmt=n=>{if(!Number.isFinite(n))return '0:00';return Math.floor(n/60)+':'+String(Math.floor(n%60)).padStart(2,'0')};
  function choose(i,autoplay=false){index=(i+tracks.length)%tracks.length;audio.src=tracks[index].src;document.getElementById('nmTrackName').textContent=tracks[index].name;document.querySelectorAll('#nmPlaylist button').forEach((b,j)=>b.classList.toggle('active',j===index));seek.value=0;document.getElementById('nmCurrent').textContent='0:00';document.getElementById('nmDuration').textContent='0:00';if(autoplay)start()}
@@ -1151,6 +1237,7 @@ document.querySelectorAll(".nav a").forEach(a=>a.addEventListener("click",()=>do
  seek.addEventListener('input',()=>{if(Number.isFinite(audio.duration))audio.currentTime=(Number(seek.value)/100)*audio.duration});
  audio.addEventListener('timeupdate',()=>{if(Number.isFinite(audio.duration)){seek.value=audio.currentTime/audio.duration*100;document.getElementById('nmCurrent').textContent=fmt(audio.currentTime)}});
  audio.addEventListener('loadedmetadata',()=>document.getElementById('nmDuration').textContent=fmt(audio.duration));
+ audio.addEventListener('ended',()=>choose(index+1,true));
  audio.addEventListener('error',()=>{document.querySelector('.nm-note').textContent='پخش آنلاین در دسترس نیست؛ اتصال اینترنت یا محدودیت میزبان صوتی را بررسی کنید.'});audio.addEventListener('canplay',()=>{document.querySelector('.nm-note').textContent='پخش آنلاین از SoundHelix؛ برای شروع یک‌بار Play را بزنید.'});audio.addEventListener('ended',()=>choose(index+1,true));audio.addEventListener('play',()=>{play.textContent='Ⅱ';root.classList.add('playing')});audio.addEventListener('pause',pause);
  choose(0,false);
 })();
@@ -1317,20 +1404,6 @@ document.querySelectorAll(".nav a").forEach(a=>a.addEventListener("click",()=>do
  dock.querySelectorAll('[data-voice-room]').forEach(b=>b.addEventListener('click',()=>joinVoice(b.dataset.voiceRoom)));
  mic.addEventListener('click',async()=>{if(!room)return;muted=!muted;await room.localParticipant.setMicrophoneEnabled(!muted);mic.textContent=muted?'MICROPHONE · UNMUTE':'MICROPHONE · MUTE'});
  leave.addEventListener('click',async()=>{if(room){await room.disconnect();document.querySelectorAll('[data-narco-remote-audio]').forEach(el=>el.remove());room=null;}status.textContent='LEFT CHANNEL';mic.disabled=true;leave.disabled=true;});
-})();
-</script>
-
-
-<script>
-/* V18 profile reactions: local preview until a shared database is connected. */
-(()=>{
- const KEY='narco_profile_reactions_v18';
- let state={};try{state=JSON.parse(localStorage.getItem(KEY)||'{}')||{}}catch(e){state={}}
- const names=['heart','flower','like','dislike'];
- function paint(panel){const id=panel.dataset.reactionProfile;if(!id)return;const data=state[id]||{counts:{},mine:null};panel.querySelectorAll('[data-reaction]').forEach(btn=>{const k=btn.dataset.reaction;btn.setAttribute('aria-pressed',String(data.mine===k));const c=btn.querySelector('[data-count]');if(c)c.textContent=String(data.counts?.[k]||0);});}
- function refresh(){document.querySelectorAll('.np-reaction-panel').forEach(paint)}
- document.addEventListener('click',e=>{const btn=e.target.closest('.np-reaction-btn');if(!btn)return;const panel=btn.closest('.np-reaction-panel');if(!panel)return;const id=panel.dataset.reactionProfile,k=btn.dataset.reaction;if(!names.includes(k))return;const data=state[id]||(state[id]={counts:{},mine:null});if(data.mine===k){data.counts[k]=Math.max(0,(data.counts[k]||0)-1);data.mine=null;}else{if(data.mine)data.counts[data.mine]=Math.max(0,(data.counts[data.mine]||0)-1);data.counts[k]=(data.counts[k]||0)+1;data.mine=k;}try{localStorage.setItem(KEY,JSON.stringify(state));}catch(err){}refresh();});
- const observer=new MutationObserver(refresh);observer.observe(document.body,{childList:true,subtree:true});document.addEventListener('DOMContentLoaded',refresh);refresh();
 })();
 </script>
 
