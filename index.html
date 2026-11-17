@@ -668,7 +668,8 @@ section[id]{scroll-margin-top:112px}
 @media(max-width:700px){html{scroll-padding-top:92px}section[id]{scroll-margin-top:92px}.lb-v16-intro{padding:12px}.lb-v16-live{font-size:7px}.lb-v16-grid{gap:12px}.lb-v16-card:hover{transform:none}.lb-v16-bottom{align-items:flex-start}.lb-v16-bottom>span:last-child{display:none}.np-lore-title{gap:7px}.np-lore-title b{font-size:16px}.np-lore-title span{font-size:9px}}
 </style>
 
-/* ===== V17 NARCO VOICE + SIGNATURE EXPERIENCE ===== */
+<style>
+/* V18: properly scoped profile reactions and fixed voice dock */
 .np-personal-signature{display:grid!important;gap:8px!important;padding:20px 16px!important;margin:14px 0!important;border:1px solid rgba(110,177,239,.22);border-radius:15px;background:linear-gradient(110deg,rgba(11,37,63,.92),rgba(5,14,26,.96));}
 .np-personal-signature b{font-family:Georgia,serif!important;font-size:clamp(15px,3vw,22px)!important;letter-spacing:1.6px!important;line-height:1.5;color:#d6eaff!important;text-shadow:0 0 22px #4da8ff55}
 .np-personal-signature span{font-size:8px!important;letter-spacing:2px;color:#7199bd}
@@ -687,6 +688,32 @@ section[id]{scroll-margin-top:112px}
 .nvd-rooms{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.nvd-room{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:10px;border:1px solid #203d59;border-radius:12px;background:#091827}.nvd-room strong{display:block;font-size:10px;color:#d9ebff}.nvd-room small{display:block;margin-top:4px;font-size:8px;color:#7292b1}.nvd-room button{border:1px solid #35648b;border-radius:8px;background:#102e49;color:#c5e6ff;padding:7px 9px;font:inherit;font-size:9px}.nvd-room button:disabled{opacity:.45;cursor:not-allowed}
 .nvd-controls{display:flex;gap:8px;margin-top:10px}.nvd-controls button{flex:1;border:1px solid #294763;border-radius:10px;background:#0b1d30;color:#a8c6e4;padding:9px;font:inherit;font-size:9px}.nvd-foot{font-size:8px;color:#6f8ba7;line-height:1.8;margin-top:9px}
 @media(max-width:520px){#narcoVoiceDock{left:7px;right:7px;bottom:7px}.nvd-rooms{grid-template-columns:1fr 1fr}.nvd-room{padding:8px}.nvd-room strong{font-size:9px}.nvd-room button{padding:7px}}
+
+/* V18 visual repair */
+#narcoVoiceDock{position:fixed!important;z-index:99999!important;bottom:calc(12px + env(safe-area-inset-bottom))!important;left:12px!important;right:12px!important;width:min(620px,calc(100% - 24px))!important;max-width:620px!important;margin:0 auto!important;box-sizing:border-box!important;overflow:hidden!important}
+#narcoVoiceDock *{box-sizing:border-box}
+#narcoVoiceDock .nvd-top{min-height:62px}
+#narcoVoiceDock .nvd-body{max-height:min(62vh,520px);overflow-y:auto;overscroll-behavior:contain}
+#narcoVoiceDock .nvd-status{line-height:1.6}
+#narcoVoiceDock .nvd-room button:disabled{opacity:.55;cursor:not-allowed}
+.np-reaction-panel{margin:14px 0;padding:16px;border:1px solid rgba(91,157,219,.24);border-radius:16px;background:linear-gradient(145deg,#0c1c2e,#07111e)}
+.np-reaction-title{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:12px}
+.np-reaction-title small{display:block;color:#79a6ce;font-size:9px;letter-spacing:1.5px}
+.np-reaction-title strong{font-size:13px;color:#e3f1ff}
+.np-reaction-actions{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.np-reaction-btn{display:flex;align-items:center;justify-content:center;gap:7px;min-height:46px;padding:8px 5px;border:1px solid #254766;border-radius:12px;background:#0a2035;color:#c7def4;font:inherit;cursor:pointer;transition:transform .18s,border-color .18s,background .18s}
+.np-reaction-btn:active{transform:scale(.96)}
+.np-reaction-btn b{font-size:20px;line-height:1}
+.np-reaction-btn span{font-size:11px;font-weight:800;font-variant-numeric:tabular-nums}
+.np-reaction-btn[aria-pressed="true"]{border-color:#62aef0;background:#12395a;box-shadow:0 0 18px #2f8bd52b}
+.np-reaction-btn[data-reaction="heart"][aria-pressed="true"] b{color:#ff6f91}
+.np-reaction-btn[data-reaction="flower"][aria-pressed="true"] b{color:#ffb5db}
+.np-reaction-btn[data-reaction="like"][aria-pressed="true"] b{color:#7dc6ff}
+.np-reaction-btn[data-reaction="dislike"][aria-pressed="true"] b{color:#b1bdcc}
+.np-reaction-note{margin-top:9px;color:#718da9;font-size:9px;line-height:1.7}
+@media(max-width:420px){.np-reaction-actions{gap:5px}.np-reaction-btn{gap:4px;min-height:42px}.np-reaction-btn b{font-size:18px}.np-reaction-btn span{font-size:10px}}
+
+</style>
 
 </head>
 <body>
@@ -1062,7 +1089,7 @@ function openProfile(id){
    <article class="np-info-card np-name-lore"><div class="np-card-heading"><span>02</span><div><small>NAME LORE / SYMBOLIC READING</small><h3>THE MEANING BEHIND THE NAME</h3></div></div><div class="np-lore-title"><b>${(nameLore[m.id]||{}).title||m.name.split(" ")[0].toUpperCase()}</b><span>${(nameLore[m.id]||{}).epithet||"THE UNWRITTEN LEGACY"}</span></div><p>${(nameLore[m.id]||{}).text||"Every name carries a story. This symbolic portrait is a poetic interpretation, not a factual judgment of character."}</p><small class="np-lore-note">A POETIC INTERPRETATION · NOT A FACTUAL PERSONALITY ASSESSMENT</small></article>
    <article class="np-info-card"><div class="np-card-heading"><span>03</span><div><small>SKILLS & SPECIALTIES</small><h3>مهارت‌ها و تخصص‌ها</h3></div></div><div class="skill-list">${skills}</div></article>
    <div class="np-signature np-personal-signature"><b>${personalSignatures[m.id]||m.name.toUpperCase()}</b><span>PERSONAL SEAL · ${m.name.toUpperCase()}</span></div>
-   <article class="np-gift-wall"><div class="np-card-heading"><span>04</span><div><small>GIFT COLLECTION</small><h3>کلکسیون گیفت‌ها</h3></div></div><div class="np-gift-items"><div class="np-gift-item"><b>✿</b><span>BLUE ROSE</span></div><div class="np-gift-item"><b>♛</b><span>SILVER CROWN</span></div><div class="np-gift-item"><b>◇</b><span>DIAMOND SKULL</span></div></div><button class="np-gift-locked" type="button" disabled>ارسال گیفت · پس از اتصال دیتابیس فعال می‌شود</button></article>
+   <article class="np-reaction-panel" data-reaction-profile="${m.id}"><div class="np-reaction-title"><div><small>PROFILE REACTIONS</small><strong>واکنش به پروفایل</strong></div><span style="font-size:9px;color:#7398b9">SHOW SOME LOVE</span></div><div class="np-reaction-actions"><button class="np-reaction-btn" type="button" data-reaction="heart" aria-pressed="false" aria-label="قلب"><b>♥</b><span data-count>0</span></button><button class="np-reaction-btn" type="button" data-reaction="flower" aria-pressed="false" aria-label="گل"><b>🌹</b><span data-count>0</span></button><button class="np-reaction-btn" type="button" data-reaction="like" aria-pressed="false" aria-label="لایک"><b>👍</b><span data-count>0</span></button><button class="np-reaction-btn" type="button" data-reaction="dislike" aria-pressed="false" aria-label="دیس‌لایک"><b>👎</b><span data-count>0</span></button></div><div class="np-reaction-note">برای هر پروفایل یک واکنش انتخاب کن؛ با انتخاب واکنش دیگر، واکنش قبلی جایگزین می‌شود.</div></article>
   </section>
   <section class="profile-tab-panel np-panel" data-profile-panel="record"><article class="np-info-card"><div class="np-card-heading"><span>02</span><div><small>HONORS & ACHIEVEMENTS</small><h3>دستاوردها و رتبه‌ها</h3></div></div>${(profileAchievements[m.id]||[]).length?`<div class="np-achievement-list">${profileAchievements[m.id].map(a=>`<div class="np-achievement"><span class="np-achievement-icon">✦</span><div><b>${a.title}</b><small>${a.label}</small></div></div>`).join("")}</div>`:'<p>هنوز دستاوردی برای این عضو ثبت نشده است.</p>'}</article></section>
   <section class="profile-tab-panel np-panel" data-profile-panel="activity"><div class="np-empty"><div class="np-empty-icon">⌁</div><small>MEMBER ACTIVITY LOG</small><h3>گزارش فعالیت</h3><p>گزارش حضور، مشارکت در راب‌ها و امتیاز عضو هنوز ثبت نشده است؛ هیچ آماری به‌صورت فرضی نمایش داده نمی‌شود.</p><span>ACTIVITY NOT CONNECTED</span></div></section>
@@ -1290,6 +1317,20 @@ document.querySelectorAll(".nav a").forEach(a=>a.addEventListener("click",()=>do
  dock.querySelectorAll('[data-voice-room]').forEach(b=>b.addEventListener('click',()=>joinVoice(b.dataset.voiceRoom)));
  mic.addEventListener('click',async()=>{if(!room)return;muted=!muted;await room.localParticipant.setMicrophoneEnabled(!muted);mic.textContent=muted?'MICROPHONE · UNMUTE':'MICROPHONE · MUTE'});
  leave.addEventListener('click',async()=>{if(room){await room.disconnect();document.querySelectorAll('[data-narco-remote-audio]').forEach(el=>el.remove());room=null;}status.textContent='LEFT CHANNEL';mic.disabled=true;leave.disabled=true;});
+})();
+</script>
+
+
+<script>
+/* V18 profile reactions: local preview until a shared database is connected. */
+(()=>{
+ const KEY='narco_profile_reactions_v18';
+ let state={};try{state=JSON.parse(localStorage.getItem(KEY)||'{}')||{}}catch(e){state={}}
+ const names=['heart','flower','like','dislike'];
+ function paint(panel){const id=panel.dataset.reactionProfile;if(!id)return;const data=state[id]||{counts:{},mine:null};panel.querySelectorAll('[data-reaction]').forEach(btn=>{const k=btn.dataset.reaction;btn.setAttribute('aria-pressed',String(data.mine===k));const c=btn.querySelector('[data-count]');if(c)c.textContent=String(data.counts?.[k]||0);});}
+ function refresh(){document.querySelectorAll('.np-reaction-panel').forEach(paint)}
+ document.addEventListener('click',e=>{const btn=e.target.closest('.np-reaction-btn');if(!btn)return;const panel=btn.closest('.np-reaction-panel');if(!panel)return;const id=panel.dataset.reactionProfile,k=btn.dataset.reaction;if(!names.includes(k))return;const data=state[id]||(state[id]={counts:{},mine:null});if(data.mine===k){data.counts[k]=Math.max(0,(data.counts[k]||0)-1);data.mine=null;}else{if(data.mine)data.counts[data.mine]=Math.max(0,(data.counts[data.mine]||0)-1);data.counts[k]=(data.counts[k]||0)+1;data.mine=k;}try{localStorage.setItem(KEY,JSON.stringify(state));}catch(err){}refresh();});
+ const observer=new MutationObserver(refresh);observer.observe(document.body,{childList:true,subtree:true});document.addEventListener('DOMContentLoaded',refresh);refresh();
 })();
 </script>
 
