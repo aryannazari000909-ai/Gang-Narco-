@@ -285,7 +285,7 @@ body{background:radial-gradient(ellipse at 50% -15%,#142b49 0,transparent 43%),#
 .nl-stamp{width:82px;height:82px;flex:0 0 82px;border:1px solid #3b6996;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:radial-gradient(circle,#14395d,#07111f 70%);box-shadow:0 0 35px #267cff22}
 .nl-stamp span{font-size:24px;color:#a8d5ff}.nl-stamp b{font-size:8px;letter-spacing:2px}.nl-stamp small{font-size:6px;letter-spacing:2px;color:#82a9d0}
 .nl-layout{display:grid;grid-template-columns:1.05fr .95fr;gap:15px;align-items:stretch}
-.nl-player-card{border:1px solid #254665;border-radius:17px;background:linear-gradient(145deg,#0d2035,#07111e 78%);box-shadow:0 22px 60px #0005,inset 0 1px #ffffff0b}
+.nl-player-card,.nl-library{border:1px solid #254665;border-radius:17px;background:linear-gradient(145deg,#0d2035,#07111e 78%);box-shadow:0 22px 60px #0005,inset 0 1px #ffffff0b}
 .nl-player-card{padding:22px;min-width:0}.nl-player-top{display:flex;justify-content:space-between;gap:10px;color:#7395b8;font-size:7px;letter-spacing:1.6px}
 .nl-player-top span:first-child{display:flex;align-items:center;gap:7px}.nl-player-top i{width:6px;height:6px;border-radius:50%;background:#53d7a4;box-shadow:0 0 10px #53d7a4}
 .nl-player-art{height:170px;position:relative;overflow:hidden;margin:18px 0;border-radius:12px;background:radial-gradient(circle at 50% 50%,#24578a,#0c2540 45%,#071321 80%);display:flex;align-items:center;justify-content:center}
@@ -303,7 +303,8 @@ body{background:radial-gradient(ellipse at 50% -15%,#142b49 0,transparent 43%),#
 .nl-embed-empty{min-height:116px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;color:#6687aa}
 .nl-embed-empty span{font-size:23px;color:#8cc5ff}.nl-embed-empty b{font-size:8px;letter-spacing:2px;color:#a8c9eb}.nl-embed-empty small{font-size:8px}
 .nl-footnote{font-size:7px;color:#637e9c;margin-top:10px;line-height:1.8}
-
+.nl-library{padding:22px}.nl-library-head{display:flex;justify-content:space-between;align-items:center}
+.nl-library-head small{font-size:7px;letter-spacing:2px;color:#78b8f3}.nl-library-head h3{font-size:16px;margin:6px 0;color:#e8f3ff}.nl-library-head>span{font-size:8px;color:#79a9d6;border:1px solid #315778;padding:6px 8px;border-radius:6px}
 .nl-tabs{display:flex;gap:7px;margin:18px 0 12px}.nl-tabs button{padding:9px 15px;border:1px solid #284866;border-radius:7px;background:#091726;color:#8ca7c4;font-size:9px;cursor:pointer}.nl-tabs button.active{border-color:#5798d6;background:#143454;color:#e5f3ff;box-shadow:0 0 18px #2d83d51a}
 .nl-artist-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.nl-artist-grid[hidden]{display:none}
 .nl-artist-grid a{position:relative;min-height:76px;padding:13px;border:1px solid #213d59;border-radius:9px;background:linear-gradient(145deg,#10253b,#091523);transition:.2s}
@@ -312,7 +313,7 @@ body{background:radial-gradient(ellipse at 50% -15%,#142b49 0,transparent 43%),#
 .nl-tip{display:flex;gap:10px;margin-top:16px;padding:12px;border:1px solid #284a69;border-radius:8px;background:#0a1928}.nl-tip>span{color:#8bc6ff}.nl-tip p{font-size:8px;color:#8ba4bf;line-height:2;margin:0}
 .nl-youtube-link{display:inline-flex;gap:10px;margin-top:13px;color:#91c7ff;font-size:9px}#narcoMusic{display:none!important}
 @media(max-width:850px){.nl-layout{grid-template-columns:1fr}.narco-login-panel{max-width:600px}.login-visual{min-height:420px}}
-@media(max-width:620px){.narco-login-panel{display:block;max-height:92vh;overflow:auto}.login-visual{min-height:190px;padding:20px}.login-crest{width:52px;height:52px;font-size:31px;border-radius:13px;margin-bottom:23px}.login-visual h3{font-size:18px;margin:8px}.login-visual p{margin:4px}.login-visual-foot{bottom:10px}.login-form-side{padding:28px 22px}.login-form-side h2{font-size:24px}.nl-head{align-items:flex-start}.nl-stamp{width:65px;height:65px;flex-basis:65px}.nl-player-card{padding:16px}.nl-player-art{height:145px}.nl-url-row{flex-direction:column}.nl-url-row button{padding:12px}.nl-artist-grid{gap:6px}.nl-artist-grid a{padding:10px;min-height:72px}.nl-artist-grid b{font-size:10px}.narco-music-lounge{padding-top:58px;padding-bottom:58px}}
+@media(max-width:620px){.narco-login-panel{display:block;max-height:92vh;overflow:auto}.login-visual{min-height:190px;padding:20px}.login-crest{width:52px;height:52px;font-size:31px;border-radius:13px;margin-bottom:23px}.login-visual h3{font-size:18px;margin:8px}.login-visual p{margin:4px}.login-visual-foot{bottom:10px}.login-form-side{padding:28px 22px}.login-form-side h2{font-size:24px}.nl-head{align-items:flex-start}.nl-stamp{width:65px;height:65px;flex-basis:65px}.nl-player-card,.nl-library{padding:16px}.nl-player-art{height:145px}.nl-url-row{flex-direction:column}.nl-url-row button{padding:12px}.nl-artist-grid{gap:6px}.nl-artist-grid a{padding:10px;min-height:72px}.nl-artist-grid b{font-size:10px}.narco-music-lounge{padding-top:58px;padding-bottom:58px}}
 
 
 /* ===== V12: NARCO MUSIC + CREW REDESIGN ===== */
@@ -1082,7 +1083,9 @@ section[id]{scroll-margin-top:112px}
 </div>
 <div class="nl-footnote">برای پخش آهنگ دلخواه: فایل MP3 را از گوشی انتخاب کن یا لینک مستقیم فایل صوتی را وارد کن. فایل انتخابی فقط روی همان دستگاه در دسترس است.</div>
 </div>
-
+<div class="nl-library">
+<div class="nl-library-head"><div><small>YOUR MUSIC LIBRARY</small><h3>کتابخانه موسیقی نارکو</h3></div><span>DIRECT AUDIO</span></div>
+<div class="nl-direct-guide"><div class="nld-guide-icon">♫</div><h4>آهنگ خودت رو اضافه کن</h4><p>فایل MP3 یا M4A را از حافظه گوشی انتخاب کن تا همان لحظه داخل سایت پخش شود. برای اینکه همه اعضا همان آهنگ را داشته باشند، فایل را در پوشه <b>music</b> پروژه GitHub قرار بده و لینک مستقیمش را در کادر «لینک مستقیم» وارد کن.</p><ul><li>بدون باز شدن YouTube</li><li>بدون انتقال به Spotify</li><li>پخش با پلیر خود سایت</li></ul><small>آهنگ‌های تجاری مثل آثار رپرهای معروف باید از فایل‌هایی استفاده شوند که خودت حق استفاده و میزبانی‌شان را داری.</small></div></div>
 </div>
 </section>
 <section class="rules-section section" id="rules">
