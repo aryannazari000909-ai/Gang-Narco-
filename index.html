@@ -667,6 +667,27 @@ section[id]{scroll-margin-top:112px}
 .np-name-lore{position:relative;overflow:hidden;border-color:rgba(211,174,101,.24)!important;background:linear-gradient(145deg,rgba(30,35,49,.88),rgba(11,17,29,.96))!important}.np-name-lore:after{content:"✦";position:absolute;right:18px;top:12px;font-size:54px;color:rgba(211,174,101,.07);pointer-events:none}.np-lore-title{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:5px 0 10px}.np-lore-title b{font:800 18px Georgia,serif;letter-spacing:.14em;color:#e4c47e}.np-lore-title span{font-size:10px;letter-spacing:.13em;color:#9aa8bf}.np-name-lore>p{position:relative;z-index:1;max-width:760px;color:#c0cada!important;font-size:12px!important;line-height:2!important}.np-lore-note{display:block;margin-top:13px;padding-top:10px;border-top:1px solid rgba(211,174,101,.15);font-size:8px;letter-spacing:.12em;color:#7f8da4}
 @media(max-width:700px){html{scroll-padding-top:92px}section[id]{scroll-margin-top:92px}.lb-v16-intro{padding:12px}.lb-v16-live{font-size:7px}.lb-v16-grid{gap:12px}.lb-v16-card:hover{transform:none}.lb-v16-bottom{align-items:flex-start}.lb-v16-bottom>span:last-child{display:none}.np-lore-title{gap:7px}.np-lore-title b{font-size:16px}.np-lore-title span{font-size:9px}}
 </style>
+
+/* ===== V17 NARCO VOICE + SIGNATURE EXPERIENCE ===== */
+.np-personal-signature{display:grid!important;gap:8px!important;padding:20px 16px!important;margin:14px 0!important;border:1px solid rgba(110,177,239,.22);border-radius:15px;background:linear-gradient(110deg,rgba(11,37,63,.92),rgba(5,14,26,.96));}
+.np-personal-signature b{font-family:Georgia,serif!important;font-size:clamp(15px,3vw,22px)!important;letter-spacing:1.6px!important;line-height:1.5;color:#d6eaff!important;text-shadow:0 0 22px #4da8ff55}
+.np-personal-signature span{font-size:8px!important;letter-spacing:2px;color:#7199bd}
+.np-gift-wall{margin:14px 0;padding:18px;border:1px solid rgba(100,165,226,.2);border-radius:18px;background:linear-gradient(145deg,#0c1c2e,#07111e)}
+.np-gift-items{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin:16px 0}
+.np-gift-item{display:grid;justify-items:center;gap:8px;padding:14px 5px;border:1px solid #254766;border-radius:13px;background:#0a2035;color:#a9ccef}
+.np-gift-item b{font-size:27px;color:#83c4ff;text-shadow:0 0 18px #318bd966}.np-gift-item span{font-size:8px;letter-spacing:1px;text-align:center}
+.np-gift-locked{width:100%;padding:12px;border:1px solid #31465b;border-radius:10px;background:#101b29;color:#8298af;font:inherit;font-size:10px}
+#narcoVoiceDock{position:fixed;z-index:9998;bottom:12px;left:12px;right:12px;max-width:620px;margin:auto;border:1px solid rgba(93,166,232,.35);border-radius:18px;background:rgba(4,12,22,.94);box-shadow:0 15px 55px #000b,0 0 30px #1675c322;backdrop-filter:blur(18px);color:#e6f3ff;direction:ltr;font-family:inherit}
+#narcoVoiceDock .nvd-top{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 15px}
+#narcoVoiceDock .nvd-brand{display:flex;align-items:center;gap:10px}.nvd-mark{width:34px;height:34px;display:grid;place-items:center;border-radius:11px;background:linear-gradient(145deg,#174b77,#071b30);border:1px solid #4c8fc5;color:#c8e8ff;font-weight:900}
+.nvd-title{font-size:11px;font-weight:900;letter-spacing:1.5px}.nvd-sub{font-size:8px;color:#7699b9;letter-spacing:1px;margin-top:3px}
+#nvdToggle{border:1px solid #294a68;background:#0b2034;color:#cde7ff;border-radius:10px;padding:8px 11px;font:inherit;font-size:10px}
+#narcoVoiceDock .nvd-body{display:none;padding:0 13px 13px}#narcoVoiceDock.open .nvd-body{display:block}
+.nvd-status{display:flex;align-items:center;gap:7px;padding:9px 10px;margin-bottom:10px;border-radius:10px;background:#0a1a2b;color:#91abc5;font-size:9px}.nvd-dot{width:7px;height:7px;border-radius:50%;background:#d7a64e;box-shadow:0 0 10px #d7a64e}
+.nvd-rooms{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.nvd-room{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:10px;border:1px solid #203d59;border-radius:12px;background:#091827}.nvd-room strong{display:block;font-size:10px;color:#d9ebff}.nvd-room small{display:block;margin-top:4px;font-size:8px;color:#7292b1}.nvd-room button{border:1px solid #35648b;border-radius:8px;background:#102e49;color:#c5e6ff;padding:7px 9px;font:inherit;font-size:9px}.nvd-room button:disabled{opacity:.45;cursor:not-allowed}
+.nvd-controls{display:flex;gap:8px;margin-top:10px}.nvd-controls button{flex:1;border:1px solid #294763;border-radius:10px;background:#0b1d30;color:#a8c6e4;padding:9px;font:inherit;font-size:9px}.nvd-foot{font-size:8px;color:#6f8ba7;line-height:1.8;margin-top:9px}
+@media(max-width:520px){#narcoVoiceDock{left:7px;right:7px;bottom:7px}.nvd-rooms{grid-template-columns:1fr 1fr}.nvd-room{padding:8px}.nvd-room strong{font-size:9px}.nvd-room button{padding:7px}}
+
 </head>
 <body>
 <div class="noise"></div>
@@ -989,6 +1010,21 @@ const nameLore = {
  "517":{title:'HASTI',epithet:'The Eternal Presence',text:'A name that evokes existence and being. Its mythic persona is quietly enduring: resilient through changing seasons, grounded in the present, and stronger than first impressions suggest.'}
 };
 
+const personalSignatures = {
+ "21":"ARYAN NAZARI · THE NOBLE FLAME",
+ "345":"AMIRALI ATAEI · THE CROWNED RESOLVE",
+ "428":"PARSA DEFAEI · THE QUIET OATH",
+ "363":"ROMINA ABASI · THE SILVER HORIZON",
+ "362":"PARHAM REZAYI · THE GENTLE GUARDIAN",
+ "343":"HASAN MANSOORI · THE GOLDEN VIRTUE",
+ "12":"YASIN GHASEMI · THE VEILED LIGHT",
+ "375":"ATA ATABAKI · THE GIFT OF DAWN",
+ "409":"PARMYA MOKHTARI · THE HIDDEN EMBER",
+ "377":"ANDIA VOSOUGHI · THE FAR-SEEKING STAR",
+ "436":"SALAH TAQIZADEH · THE JUST BLADE",
+ "517":"HASTI NADI · THE ETERNAL PRESENCE"
+};
+
 const profileModal=document.getElementById("profileModal");
 function openProfile(id){
  const m=roster.find(x=>x.id===id); if(!m)return;
@@ -1025,7 +1061,8 @@ function openProfile(id){
    <article class="np-info-card"><div class="np-card-heading"><span>01</span><div><small>PERSONAL RECORD</small><h3>درباره عضو</h3></div></div><p>${bio}</p></article>
    <article class="np-info-card np-name-lore"><div class="np-card-heading"><span>02</span><div><small>NAME LORE / SYMBOLIC READING</small><h3>THE MEANING BEHIND THE NAME</h3></div></div><div class="np-lore-title"><b>${(nameLore[m.id]||{}).title||m.name.split(" ")[0].toUpperCase()}</b><span>${(nameLore[m.id]||{}).epithet||"THE UNWRITTEN LEGACY"}</span></div><p>${(nameLore[m.id]||{}).text||"Every name carries a story. This symbolic portrait is a poetic interpretation, not a factual judgment of character."}</p><small class="np-lore-note">A POETIC INTERPRETATION · NOT A FACTUAL PERSONALITY ASSESSMENT</small></article>
    <article class="np-info-card"><div class="np-card-heading"><span>03</span><div><small>SKILLS & SPECIALTIES</small><h3>مهارت‌ها و تخصص‌ها</h3></div></div><div class="skill-list">${skills}</div></article>
-   <div class="np-signature"><b>NARCO.</b><span>OFFICIAL MEMBER FILE · VOXO NETWORK</span></div>
+   <div class="np-signature np-personal-signature"><b>${personalSignatures[m.id]||m.name.toUpperCase()}</b><span>PERSONAL SEAL · ${m.name.toUpperCase()}</span></div>
+   <article class="np-gift-wall"><div class="np-card-heading"><span>04</span><div><small>GIFT COLLECTION</small><h3>کلکسیون گیفت‌ها</h3></div></div><div class="np-gift-items"><div class="np-gift-item"><b>✿</b><span>BLUE ROSE</span></div><div class="np-gift-item"><b>♛</b><span>SILVER CROWN</span></div><div class="np-gift-item"><b>◇</b><span>DIAMOND SKULL</span></div></div><button class="np-gift-locked" type="button" disabled>ارسال گیفت · پس از اتصال دیتابیس فعال می‌شود</button></article>
   </section>
   <section class="profile-tab-panel np-panel" data-profile-panel="record"><article class="np-info-card"><div class="np-card-heading"><span>02</span><div><small>HONORS & ACHIEVEMENTS</small><h3>دستاوردها و رتبه‌ها</h3></div></div>${(profileAchievements[m.id]||[]).length?`<div class="np-achievement-list">${profileAchievements[m.id].map(a=>`<div class="np-achievement"><span class="np-achievement-icon">✦</span><div><b>${a.title}</b><small>${a.label}</small></div></div>`).join("")}</div>`:'<p>هنوز دستاوردی برای این عضو ثبت نشده است.</p>'}</article></section>
   <section class="profile-tab-panel np-panel" data-profile-panel="activity"><div class="np-empty"><div class="np-empty-icon">⌁</div><small>MEMBER ACTIVITY LOG</small><h3>گزارش فعالیت</h3><p>گزارش حضور، مشارکت در راب‌ها و امتیاز عضو هنوز ثبت نشده است؛ هیچ آماری به‌صورت فرضی نمایش داده نمی‌شود.</p><span>ACTIVITY NOT CONNECTED</span></div></section>
@@ -1200,5 +1237,61 @@ document.querySelectorAll(".nav a").forEach(a=>a.addEventListener("click",()=>do
  window.addEventListener('hashchange',()=>{const id=location.hash.slice(1);if(ids.includes(id))activate(id);requestUpdate()});
  const initial=location.hash.slice(1);if(ids.includes(initial))activate(initial);requestUpdate();
 })();</script>
+
+<div id="narcoVoiceDock" aria-label="NARCO Voice Network">
+ <div class="nvd-top"><div class="nvd-brand"><div class="nvd-mark">N</div><div><div class="nvd-title">NARCO VOICE NETWORK</div><div class="nvd-sub">LIVE ROOMS · VOXO COMMUNITY</div></div></div><button id="nvdToggle" type="button">OPEN VOICE ▴</button></div>
+ <div class="nvd-body">
+  <div class="nvd-status"><i class="nvd-dot"></i><span id="nvdStatus">VOICE SERVER NOT CONFIGURED · اتصال صوتی هنوز راه‌اندازی نشده</span></div>
+  <div class="nvd-rooms">
+   <div class="nvd-room"><div><strong>GENERAL VOICE</strong><small>Open community room</small></div><button type="button" data-voice-room="general" disabled>JOIN</button></div>
+   <div class="nvd-room"><div><strong>GANG MEETING</strong><small>Members meeting</small></div><button type="button" data-voice-room="meeting" disabled>JOIN</button></div>
+   <div class="nvd-room"><div><strong>PRIVATE ROOM</strong><small>Invite-only channel</small></div><button type="button" data-voice-room="private" disabled>JOIN</button></div>
+   <div class="nvd-room"><div><strong>AFK ROOM</strong><small>Quiet voice lounge</small></div><button type="button" data-voice-room="afk" disabled>JOIN</button></div>
+  </div>
+  <div class="nvd-controls"><button id="nvdMute" type="button" disabled>MICROPHONE · MUTE</button><button id="nvdLeave" type="button" disabled>LEAVE CHANNEL</button></div>
+  <div class="nvd-foot">Secure voice requires HTTPS, microphone permission, a LiveKit server and a private token endpoint. Room buttons unlock automatically after configuration.</div>
+ </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/livekit-client/dist/livekit-client.umd.min.js"></script>
+<script>
+/* NARCO VOICE CONNECTION
+   To activate: deploy a LiveKit token endpoint and set both values below.
+   Never place a LiveKit API secret in this public HTML file. */
+(()=>{
+ const VOICE_CONFIG={livekitUrl:"",tokenEndpoint:""};
+ const dock=document.getElementById('narcoVoiceDock');
+ const toggle=document.getElementById('nvdToggle');
+ const status=document.getElementById('nvdStatus');
+ if(!dock||!toggle)return;
+ toggle.addEventListener('click',()=>{dock.classList.toggle('open');toggle.textContent=dock.classList.contains('open')?'CLOSE VOICE ▾':'OPEN VOICE ▴'});
+ const configured=!!(VOICE_CONFIG.livekitUrl&&VOICE_CONFIG.tokenEndpoint&&window.LivekitClient);
+ dock.querySelectorAll('[data-voice-room]').forEach(b=>b.disabled=!configured);
+ const mic=document.getElementById('nvdMute'),leave=document.getElementById('nvdLeave');
+ mic.disabled=!configured;leave.disabled=!configured;
+ let room=null,muted=false;
+ async function joinVoice(roomName){
+  if(!configured){status.textContent='VOICE SERVER NOT CONFIGURED · سرور ویس هنوز متصل نشده';return;}
+  try{
+   status.textContent='CONNECTING…';
+   const response=await fetch(VOICE_CONFIG.tokenEndpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({room:roomName})});
+   if(!response.ok)throw new Error('Token service unavailable');
+   const data=await response.json(); if(!data.token)throw new Error('Missing access token');
+   room=new window.LivekitClient.Room();
+   room.on(window.LivekitClient.RoomEvent.TrackSubscribed,(track)=>{if(track.kind==='audio'){const el=track.attach();el.autoplay=true;el.dataset.narcoRemoteAudio='1';document.body.appendChild(el);}});
+   room.on(window.LivekitClient.RoomEvent.TrackUnsubscribed,(track)=>{track.detach().forEach(el=>el.remove());});
+   room.on(window.LivekitClient.RoomEvent.ActiveSpeakersChanged,(speakers)=>{dock.dataset.activeSpeakers=String(speakers.length);});
+   await room.connect(VOICE_CONFIG.livekitUrl,data.token);
+   await room.localParticipant.setMicrophoneEnabled(true);
+   muted=false;mic.textContent='MICROPHONE · MUTE';mic.disabled=false;leave.disabled=false;
+   status.textContent='CONNECTED · '+roomName.toUpperCase();
+   room.on(window.LivekitClient.RoomEvent.Disconnected,()=>{status.textContent='DISCONNECTED';room=null;leave.disabled=true;mic.disabled=true;});
+  }catch(err){status.textContent='CONNECTION FAILED · '+(err.message||'Please retry');room=null;}
+ }
+ dock.querySelectorAll('[data-voice-room]').forEach(b=>b.addEventListener('click',()=>joinVoice(b.dataset.voiceRoom)));
+ mic.addEventListener('click',async()=>{if(!room)return;muted=!muted;await room.localParticipant.setMicrophoneEnabled(!muted);mic.textContent=muted?'MICROPHONE · UNMUTE':'MICROPHONE · MUTE'});
+ leave.addEventListener('click',async()=>{if(room){await room.disconnect();document.querySelectorAll('[data-narco-remote-audio]').forEach(el=>el.remove());room=null;}status.textContent='LEFT CHANNEL';mic.disabled=true;leave.disabled=true;});
+})();
+</script>
+
 </body>
 </html>
