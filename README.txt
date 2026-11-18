@@ -1,8 +1,1 @@
-GANG NARCO Elite v31
-
-نسخه سبک‌سازی‌شده نسخه ۲۸؛ تصاویر داخلی به WebP بهینه شده‌اند تا بارگذاری سریع‌تر شود.
-فایل اصلی سایت: index.html
-برای GitHub Pages، محتویات ZIP را استخراج و index.html را در ریشه مخزن قرار دهید.
-
-
-بخش NARCO RANK UP اضافه شد. این نسخه پیش‌نمایش محلی است؛ اتصال واقعی اعضا و مدیریت به دیتابیس و بک‌اند نیاز دارد.
+GANG NARCO V40.7 — Mobile Voice Dock refinement. Upload index.html to your hosting public_html folder.
